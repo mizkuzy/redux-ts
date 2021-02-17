@@ -1,5 +1,5 @@
-import {ActionType} from '../action-types'
-import {RepositoriesAction} from '../actions'
+import {ActionType} from './action-types'
+import {RepositoriesAction} from './actions'
 
 interface RepositoriesState {
   data: string[],
