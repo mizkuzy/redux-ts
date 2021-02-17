@@ -12,7 +12,7 @@ export const searchRepositories = (term: string) => {
       const {data} = await axios.get('http://registry.npmjs.org/-/v1/search',
         {
           params: {
-            search: term
+            text: term
           }
         }
       )
