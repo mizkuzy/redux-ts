@@ -1,2 +1,2 @@
 export * from './store'
-export * from './repositories/action-creators'
+export * from './action-creators'
