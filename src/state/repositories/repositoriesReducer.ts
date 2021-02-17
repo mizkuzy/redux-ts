@@ -7,7 +7,7 @@ interface RepositoriesState {
   error: string | null
 }
 
-const reducer = (state: RepositoriesState, action: RepositoriesAction) => {
+const repositoriesReducer = (state: RepositoriesState, action: RepositoriesAction) => {
   switch (action.type) {
     case ActionType.SEARCH_REPOSITORIES:
       return {loading: true, data: [], error: null}
@@ -19,5 +19,4 @@ const reducer = (state: RepositoriesState, action: RepositoriesAction) => {
       return state
   }
 }
-
-export default reducer
+export default repositoriesReducer
