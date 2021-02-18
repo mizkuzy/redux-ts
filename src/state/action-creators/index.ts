@@ -1,5 +1,5 @@
 import {Action, Dispatch} from 'redux'
-import {ActionType} from './action-types'
+import {ActionType} from '../action-types'
 import axios from 'axios'
 
 export const searchRepositories = (term: string) => {
