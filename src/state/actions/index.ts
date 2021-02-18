@@ -6,7 +6,7 @@ interface SearchRepositoriesAction {
 
 interface SearchRepositoriesSuccessAction {
   type: ActionType.SEARCH_REPOSITORIES_SUCCESS,
-  payload?: string[]
+  payload: string[]
 }
 
 interface SearchRepositoriesErrorAction {
