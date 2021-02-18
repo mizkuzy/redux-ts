@@ -1,9 +1,9 @@
 import {useDispatch} from 'react-redux'
 import {bindActionCreators} from 'redux'
-import * as ac from '../state/action-creators'
+import { actionCreators } from '../state';
 
 export const useActions = () => {
   const dispatch = useDispatch()
 
-  return bindActionCreators(ac, dispatch)
+  return bindActionCreators(actionCreators, dispatch)
 }
