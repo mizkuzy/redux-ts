@@ -12,7 +12,7 @@ const initialState = {
   loading: false,
   error: null
 }
-const repositoriesReducer = (state: RepositoriesState = initialState, action: RepositoriesAction) => {
+const repositoriesReducer = (state: RepositoriesState = initialState, action: RepositoriesAction): RepositoriesState => {
   switch (action.type) {
     case ActionType.SEARCH_REPOSITORIES:
       return {loading: true, data: [], error: null}
